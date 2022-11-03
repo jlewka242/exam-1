@@ -1,0 +1,112 @@
+.form-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 862px;
+    max-width: 100%;
+
+    .container {
+        padding: 295px 0 120px;
+    }
+}
+
+.form-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .arrow-down {
+        border: solid $white;
+        border-width: 0px 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+    }
+
+    span {
+        padding: 8px 0 48px;
+        display: block;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.31em;
+        color: $white;
+        font-family: 'josefin_Sans';
+        text-transform: none;
+    }  
+
+    a {
+        color: $white;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2em;
+
+        i {
+            display: block;
+            margin: 0 auto;
+            font-size: 14px;
+            padding-top: 4px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.search-bar {
+    padding-bottom: 211px;
+}
+
+.search {
+    display: flex;
+    border-style: none;
+    background-color: $white;
+    width: 100%;
+    min-width: 647px;
+    z-index: 1;
+
+    @include media('<=576px') {
+        min-width: 540px;
+    }
+
+    input {
+        padding: 20px 36px;
+        flex: 1;
+        outline: none;
+        border: none;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        color: $dark-gray;
+    }
+
+    .btn-search {
+        margin: 4px 5px;
+        display: flex;
+        border: none;
+
+        a { position: relative;
+            padding: 16px 24px 16px 52px;
+            color: $white;
+            font-family: 'Aleo';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background-color: $blue;
+
+            .icon-glass {
+                position: absolute;
+                transform: translateX(-30px);
+                top: 12px;
+                font-size: 16px;
+            }
+        }
+    }
+}

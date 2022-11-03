@@ -1,0 +1,73 @@
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+    max-width: 1140px;
+}
+
+h1 {
+    font-family: 'josefin_sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+}
+
+h2 {
+    font-family: 'Aleo';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $white;
+}
+
+h3 {
+    font-family: 'josefin_sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+p {
+    font-family: 'josefin_sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    font-family: 'Aleo';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase; 
+    color: $white;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
